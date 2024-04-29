@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     switch (mode) {
         case 'carlosJoss':
             playerImg.src = 'imgs/Carlos.PNG';
-            bulletImg.src = 'imgs/corazón.png';
+            bulletImg.src = 'imgs/peluche.png';
             enemyImg.src = 'imgs/Diosa.png';
             break;
         case 'miguelTorta':
