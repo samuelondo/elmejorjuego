@@ -85,3 +85,41 @@ body {
     background: #f50057; /* Cambio de color al pasar el ratón por encima */
 }
 
+#mobileControls {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    display: flex; /* Organiza los botones en línea */
+    justify-content: space-around; /* Espacio uniforme entre botones */
+    width: 100%; /* Aprovecha todo el ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo */
+}
+
+#mobileControls button {
+    background-color: #ff4081; /* Color rosado para mayor visibilidad */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Hace los botones completamente redondos */
+    width: 80px; /* Tamaño grande para fácil acceso */
+    height: 80px; /* Altura igual al ancho para mantener la forma circular */
+    font-size: 32px; /* Icono grande */
+    color: white; /* Icono blanco */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra para mejor efecto visual */
+    margin: 0 10px; /* Espaciado entre botones */
+    display: flex;
+    align-items: center; /* Centra el texto/icono verticalmente */
+    justify-content: center; /* Centra el texto/icono horizontalmente */
+    user-select: none; /* Evita que el texto del botón sea seleccionable */
+    touch-action: manipulation; /* Optimiza los toques en dispositivos táctiles */
+}
+
+#mobileControls button:active {
+    background-color: #f50057; /* Un tono más oscuro al estar presionado */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Sombra más pequeña para efecto de presión */
+}
+
+/* Opcional: Añade transiciones suaves al cambiar de estado */
+#mobileControls button {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+

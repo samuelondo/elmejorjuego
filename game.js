@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     switch (mode) {
         case 'carlosJoss':
             playerImg.src = 'imgs/Carlos.PNG';
-            bulletImg.src = 'imgs/corazón.png';
+            bulletImg.src = 'imgs/peluche.png';
             enemyImg.src = 'imgs/Diosa.png';
             break;
         case 'miguelTorta':
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         y: canvas.height - 100,
         width: 90,
         height: 90,
-        speed: 5
+        speed: 4
     };
 
     let bullets = [];
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 y: -90,
                 width: 90,
                 height: 90,
-                speed: 2, // Base speed of enemies
+                speed: 2.3, // Base speed of enemies
                 img: enemyImg
             });
         }
