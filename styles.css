@@ -86,7 +86,6 @@ body {
 }
 
 #mobileControls {
-    position: fixed;
     bottom: 20px; /* Ajusta la posición en la parte inferior */
     left: 50%;
     transform: translateX(-50%); /* Centrado horizontal */
@@ -123,20 +122,3 @@ body {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-
-@media (orientation: landscape) {
-    /* Estilos específicos para cuando el dispositivo está en horizontal */
-    #gameCanvas {
-        max-height: 100vh;
-        height: auto;
-        width: auto;
-    }
-}
-@media (orientation: portrait) {
-    /* Estilos específicos para cuando el dispositivo está en vertical */
-    #gameCanvas {
-        max-width: 100vw;
-        width: auto;
-        height: auto;
-    }
-}
