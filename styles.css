@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#startScreen button, #mobileControls button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+canvas {
+    background: url('imgs/fondo_amor.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameUI p {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff4081, #ffcc00); /* Fondo gradiente */
+    flex-direction: column;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+#startScreen {
+    background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra para dar profundidad */
+    text-align: center;
+    width: 90%; /* Responsividad */
+    max-width: 500px; /* Ancho máximo para dispositivos grandes */
+}
+
+#startScreen select, #startScreen button {
+    width: 100%; /* Asegura que ocupen todo el espacio disponible */
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para un mejor manejo del padding y width */
+    font-size: 18px; /* Tamaño de letra */
+    background: #fff;
+    color: #333;
+}
+
+#startScreen label {
+    display: block; /* Hace que cada elemento tenga su propia línea */
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+#startScreen button {
+    background: #ff4081; /* Color que contrasta con el fondo */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out; /* Transición suave al cambiar el color */
+}
+
+#startScreen button:hover {
+    background: #f50057; /* Cambio de color al pasar el ratón por encima */
+}
+
